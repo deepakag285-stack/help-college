@@ -1,0 +1,104 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Redirect</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background:linear-gradient(45deg,red 60%,green 50%); display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .container { background: yellow; padding: 30px; border-radius: 12px; box-shadow: 0 10px 25px #0000001a; width: 350px; }
+        h2 { text-align: center; color: #333; margin-bottom: 20px; }
+        input { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; font-size: 16px; }
+        button { width: 100%; padding: 12px; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; transition: 0.3s; margin-top: 10px; }
+        .btn-primary { background-color: #007bff; color: white; }
+        .btn-primary:hover { background-color: #0056b3; }
+        .toggle-btn { background: none; color: #007bff; text-decoration: underline; font-size: 14px; margin-top: 15px; }
+        .error { color: #dc3545; font-size: 14px; text-align: center; display: none; margin-top: 10px; }
+    </style>
+</head>
+<body>
+<script>
+document.addEventListener("contextmenu", (e) => e.preventDefault());
+
+document.onkeydown = function(e) {
+  if (e.keyCode == 123) return false; // F12
+  if (e.ctrlKey && e.shiftKey && e.keyCode == 73) return false; // Ctrl+Shift+I
+  if (e.ctrlKey && e.keyCode == 85) return false; // Ctrl+U
+};
+</script>
+<div class="container" id="authBox">
+    <h2 id="title">Create Account</h2>
+    
+    <input type="text" id="userInput" placeholder="Enter Username">
+    <input type="password" id="passInput" placeholder="Enter Password">
+    
+    <button class="btn-primary" id="actionBtn" onclick="processAuth()">Sign Up</button>
+    
+    <div id="errorMessage" class="error">Invalid Credentials!</div>
+    
+    <button class="toggle-btn" onclick="toggleForm()" id="toggleBtn">Already have an account? Login</button>
+</div>
+
+<script>
+  //  let r=documenet.getElementById('title');
+   // r.innerText="hj";
+    let isLoginMode = false; // Starts in Sign Up mode
+    
+    // Change this to the website you want to open
+    const targetUrl = "home.html"; 
+
+    function toggleForm() {
+        isLoginMode = !isLoginMode;
+        const title = document.getElementById('title');
+        const actionBtn = document.getElementById('actionBtn');
+        const toggleBtn = document.getElementById('toggleBtn');
+        const error = document.getElementById('errorMessage');
+
+        error.style.display = "none";
+
+        if (isLoginMode) {
+            title.innerText = "Login";
+            actionBtn.innerText = "Login";
+            toggleBtn.innerText = "Need an account? Sign Up";
+        } else {
+            title.innerText = "Create Account";
+            actionBtn.innerText = "Sign Up";
+            toggleBtn.innerText = "Already have an account? Login";
+        }
+    }
+
+    function processAuth() {
+        const userValue = document.getElementById('userInput').value;
+        const passValue = document.getElementById('passInput').value;
+        const error = document.getElementById('errorMessage');
+
+        if (!userValue || !passValue) {
+            alert("Please enter both fields");
+            return;
+        }
+
+        if (!isLoginMode) {
+            // --- SIGN UP LOGIC ---
+            localStorage.setItem('storedUser', userValue);
+            localStorage.setItem('storedPass', passValue);
+            alert("Account Created! Now please Login.");
+            toggleForm(); // Switch to login mode automatically
+        } else {
+            // --- LOGIN LOGIC ---
+            const savedUser = localStorage.getItem('storedUser');
+            const savedPass = localStorage.getItem('storedPass');
+
+            // Check if Login credentials match the Sign Up credentials
+            if (userValue === savedUser && passValue === savedPass) {
+               // alert("Match found! Opening website...");
+                window.location.href =  targetUrl; // Redirect to the URL
+            } else {
+                error.style.display = "block";
+                error.innerText = "Login failed: Credentials do not match.";
+            }
+        }
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+ 
+</head>
+<body>
+          <canvas id="wmCanvas"></canvas>
+<script>
+let canvas = document.getElementById("wmCanvas");
+let ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let text = " DEEPAK  | " + new Date().toLocaleString();
+
+ctx.font = "20px Arial";
+ctx.fillStyle = "rgba(0.3,0.3,0.3,0.3)";
+ctx.rotate(-0.5);
+
+for (let x = -500; x < canvas.width; x += 300) {
+    for (let y = 0; y < canvas.height; y += 150) {
+        ctx.fillText(text, x, y);
+    }
+}
+</script>
+
+<style>
+#wmCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+}
+</style>
+
+        <style>
+   body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none; /* मोबाइल पर इमेज दबाए रखने पर 'Save' मेनू नहीं आएगा */
+  }
+
+  img {
+    pointer-events: none;
+    -webkit-user-drag: none;
+  }
+
+   @media print {
+    body { display: none !important; }
+  }
+
+   .protected-content {
+    transition: filter 0.1s ease;
+  }
+  .is-blurred {
+    filter: blur(60px) !important;
+  }
+
+ </style>
+<script>
+   document.addEventListener('contextmenu', e => e.preventDefault());
+
+   document.addEventListener('keydown', function(e) {
+    if (
+      e.keyCode === 123 || // F12
+      (e.ctrlKey && (e.keyCode === 85 || e.keyCode === 83 || e.keyCode === 80)) || // Ctrl+U, S, P
+      (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) // Ctrl+I/J/C
+    ) {
+      e.preventDefault();
+      alert("Security Alert: Content is Protected!");
+      return false;
+    }
+  });
+   document.addEventListener('keyup', (e) => {
+    if (e.key === 'PrintScreen') {
+      navigator.clipboard.writeText(''); // क्लिपबोर्ड खाली करना
+      alert('Screenshots are disabled!');
+    }
+  });
+  setInterval(function() {
+    const threshold = 160;
+    if (window.outerWidth - window.innerWidth > threshold || window.outerHeight - window.innerHeight > threshold) {
+      document.body.innerHTML = "<h2 style='text-align:center; color:red; margin-top:20%'>Security Breach! Please close Developer Tools to view content.</h2>";
+    }
+  }, 1000);
+ </script>
+
+    <script>
+document.addEventListener("contextmenu", (e) => e.preventDefault());
+
+document.onkeydown = function(e) {
+  if (e.keyCode == 123) return false; // F12
+  if (e.ctrlKey && e.shiftKey && e.keyCode == 73) return false; // Ctrl+Shift+I
+  if (e.ctrlKey && e.keyCode == 85) return false; // Ctrl+U
+};
+</script>
+                     <a  href="https://wa.me/8684899869?text= How can i help you"
+     class="whatshap-float" ><img  class="ji" src="images/QtvHd6lI9q4iydr59B.gif"></a>
+  <br>
+  <a href="tel: +918684899869" class="call-float"><img class="ji" src="images/WqXjQsd0MAhc2CvtkQ (1).gif"></a>
+ <style>
+                 .whatshap-float{
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                z-index: 1000;
+             }
+               .call-float{
+                position: fixed;
+                bottom: 100px;
+                right: 20px;
+                z-index: 1000;
+             }
+                     .ji{
+        height: 60px;
+        width: 60px;
+     }
+</style>
+    <br>
+    <a href="index.html"><button class=" btn btn-success">BACK</button></a>
+<br><br>
+    <div class="todo" > 
+    <marquee > 
+     <img class="ig-67" src="images/oM5kD4MuSqXjhdCiSh.gif"><a href="pdf/Document.pdf"><h8>regarding pyq uploaded</h8><sup>06-05-2026</sup></a>
+         </marquee>
+
+    </div>
+ <hr>
+ <h6>*For major pyq click on  select class </h6>
+
+            <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div>
+                        <ul class="nav nav-tabs">  
+                            <li class="tabs dropdown"> 
+                                <a href="" class="tabs-link dropdown-toggle" data-bs-toggle="dropdown">Select<br>Class </a>
+                             <div class="dropdown-menu">
+                                <a href="bsc.html" class="dropdown-item">Bachler of science(BSC)</a><hr>
+                                                                <a href="bca.html" class="dropdown-item">Bachler Of Computer Application(BCA)</a><hr>
+                                <a href="ba.html" class="dropdown-item">Bachler Of Arts(BA)</a><hr>
+                                                                <a href="bba.html" class="dropdown-item">Bachler of Business Admini.(Bba)</a><hr>
+                                <a href="bcom.html" class="dropdown-item">Bachler of Commerce(Bcom)</a>
+
+                             </div></li>
+                                                   <li class="col-3" class="nav-item"><a class="nav-link" href="#common" data-bs-toggle="tab">Common PYQ all classes</a></li>
+                      <li class="col-3" class="nav-item"><a class="nav-link" href="#syllabs" data-bs-toggle="tab">syllabs</a></li>
+        <li class="col-3" class="nav-item"><a class="nav-link" href="#result" data-bs-toggle="tab">result</a></li>
+
+      </ul>
+  </div>
+</div>
+</div>
+    <div class="tab-content">
+    <div id="common" class="tab-pane fade in">
+        <br>
+                                                <div class="card"> 
+    <div class="card-header"> 
+        <div class="card-left">
+             Subject : 
+        </div><hr>
+  <div class="card-right">
+    i) Basic of cs<hr>ii) basic of it tool<hr>iii) computinal physics<hr>iv) human value & ethics<hr>v) minor chemistry<hr>vi) introductry maths<hr>vii) hindi bhasa and vaykaran<hr>viii) csr<hr>ix) english communication<hr>x) elementary economics<hr>xi) English for compe.exams<hr>xii) Personal finance<hr>xiii) Fundam.of botany<hr>xiv) Evs <hr> xv) General Geograph of Har<hr>xvi) Introductry chemistry-1
+ </div>  
+   <hr>
+ Semester : 1st(2024,25)
+ <hr>
+ Action   : <a class="hj" href="https://drive.google.com/drive/folders/11fisYvp3RD0TtChMTMqP-_xgaq25Mz31?usp=gmail">Click</a>
+</div>
+</div>
+<br>
+                     <div class="card">
+    <div class="card-header"> 
+                <div class="card-left">
+             Subject :
+        </div><hr>
+  <div class="card-right">
+    i) business commu.<hr>ii) internet &web tech<hr>iii) intro.of enterprin.deve.<hr>iv) evs<hr>v) Personality devlo. & lEadership<hr>vi) Fundam.of bank.&insurance<hr>vii) Cloud Computing skills<hr>viii) minor-chemistry-11<hr>ix) mathematics for commerce & social science<hr>x) chemistry of food flavour & colentrs<hr>xi) basic instruments skills<hr>xii) understanding abnormal behaviour<hr>xiii) elementry electicity & em theory
+  </div>  <hr> 
+ Semester : 2nd(2025,26)<hr>
+Action   : <a class="hj" href="https://drive.google.com/drive/folders/1mGovE4XEjBxwkyRPYNwvIrORnG_IvNau?usp=sharing">Click</a>
+</div>
+</div>
+<br>
+                     <div class="card">
+    <div class="card-header"> 
+                <div class="card-left">
+             Subject :
+        </div><hr>
+  <div class="card-right">
+     i) E-business & Cyber security<hr>ii) english gram.& usuage<hr>iii) advance it skills<hr>iv) Consumer protec.in india<hr>v) अनुवाद कलां<hr>vi) हिंदी भाषा और संप्रसाहन<hr>vii) Minor Physics<hr>viii) आधुनिक गढ़य साहित्य( Minor)<hr>ix) Mathemtics for all
+ </div>  <hr> 
+ Semester : 3rd(2025,26)<hr>
+Action   : <a class="hj" href="https://drive.google.com/drive/folders/1GcHjOSkPCuH-wx-y7FnHpqofS0hTzjig?usp=sharing">Click</a>
+</div>
+</div>
+<br>
+                     <div class="card">
+    <div class="card-header"> 
+                <div class="card-left">
+             Subject :
+        </div><hr>
+  <div class="card-right">
+     
+ </div>  <hr> 
+ Semester : 4th(2026,27)<hr>
+Action   : <a class="hj" href="https://drive.google.com/drive/folders/1lRpEgIGAT9woAdeieDG3Z50GPTPy-hXg?usp=sharing">Click</a>
+</div>
+</div>
+<br>
+                     <div class="card">
+    <div class="card-header"> 
+                <div class="card-left">
+             Subject :
+        </div><hr>
+  <div class="card-right">
+     
+ </div> <hr> 
+ Semester : 5th(2026,27)<hr>
+Action   : <a class="hj"  href="https://drive.google.com/drive/folders/160o0v6CcdLC5nYp35LdnZ6arx_5ZwgfL?usp=sharing">Click</a>
+</div>
+</div>
+<br>
+                     <div class="card">
+    <div class="card-header"> 
+                <div class="card-left">
+             Subject :
+        </div><hr>
+  <div class="card-right">
+     
+ </div> <hr> 
+ Semester : 6th(2027,28)<hr>
+Action   : <a class="hj" href="https://drive.google.com/drive/folders/1hLaZzUChkjo_ToN9fmXpTgUwbfpmxtwW?usp=sharing">Click</a>
+</div>
+</div>
+<br>
+
+    </div>
+    <div id="syllabs" class="tab-pane fade in">
+        <br>
+        <table class="table table-border">
+            <tr>
+                <h4>*Syllabs Of UG/PG</h4>
+                <th>Sr.no</th>
+                <th>UG/PG</th>
+                <th>Action</th>
+            </tr>
+            <tr> 
+            <td>1</td>
+            <td>Undergraduate</td>
+            <td><a href="https://cblu.ac.in/ug-syllabi/">download</td>
+                </tr>
+                            <tr> 
+            <td>2</td>
+            <td>Post-graduate</td>
+            <td><a href="https://cblu.ac.in/pg-syllabi/">download</td>
+                </tr>
+
+         </table>
+        </div>
+        <div id="result" class="tab-pane fade in">
+            <br>
+                    <table class="table table-border">
+            <tr>
+                <h4>*Result Of Following Exams</h4>
+                <th>Sr.no</th>
+                <th>Exams Name</th>
+                <th>Action</th>
+            </tr>
+            <tr> 
+            <td>1</td>
+            <td>CBLU</td>
+            <td><a href="https://cbluse.ucanapply.com/declared-results">see</td>
+                </tr>
+                            <tr> 
+            <td>2</td>
+            <td>Cblu(Dec.2024-main/re)</td>
+            <td><a href="https://erp.cblu.ac.in/result-december-2024/">see</td>
+                </tr>
+
+         </table>
+
+         </div>
+      </div>
+  <hr>
+       </body>
+<style>
+    .todo{
+    display:flex;
+    gap:2cm;
+}
+    body{
+        background-color:dimgray;
+ 
+    }
+            .card{
+         margin-left: 0.5cm;
+        margin-right: 0.5cm;
+        padding-left: 8%;
+     }
+     .card-left{
+        text-align: left;
+     }
+.card-header{
+    font: 1em sans-serif;
+    justify-items: auto;
+}
+             .card-right{
+             color: green;
+                          margin-left: 1cm;
+         }
+  .ig-67{
+    height: 40px;
+    width: 50px;
+}
+.hj{
+    color: blue;
+}
+.hg{
+    color: white;
+}
+ sup{
+    color:yellow;
+}
+hr{
+    color: black;
+}
+    .ba{
+        color: blue;
+    }
+    .tabs-link{
+        color: white;
+    }
+    .tabs-link:hover{
+        color: black;
+    }
+    .bsc{
+        color: red;
+    }
+          button{
+        margin-left: 3cm;
+        color: black;
+        width: 150px;
+        height: 60px;
+    }
+.nav-link{
+    color: white;
+}
+    .dropdown-item{
+        color: chartreuse;
+    }
+
+.nav-link:hover{
+    color: darkcyan;
+}
+         a{
+        text-decoration: none;
+        color: yellow;
+    }
+    .adu{
+        color: red;
+        margin-left: 2cm;
+    }
+     a:hover{
+        color: green;
+    }
+    td{
+        font-style: italic;
+    }
+    h4{
+        color: red;
+        font-style: italic;
+        margin-left: 2cm;
+    }
+      a{
+        color: black;
+    }
+    h6{
+        color: black;
+        margin-left: 1cm;
+        font-style: italic;
+    }
+    h8{
+        color: white;
+    }
+  </style>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+ 
+</head>
+<body>
+         <canvas id="wmCanvas"></canvas>
+<script>
+let canvas = document.getElementById("wmCanvas");
+let ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let text = " DEEPAK  | " + new Date().toLocaleString();
+
+ctx.font = "20px Arial";
+ctx.fillStyle = "rgba(0.3,0.3,0.3,0.3)";
+ctx.rotate(-0.5);
+
+for (let x = -500; x < canvas.width; x += 300) {
+    for (let y = 0; y < canvas.height; y += 150) {
+        ctx.fillText(text, x, y);
+    }
+}
+</script>
+
+<style>
+#wmCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+}
+</style>
+
+        <style>
+   body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none; /* मोबाइल पर इमेज दबाए रखने पर 'Save' मेनू नहीं आएगा */
+  }
+
+  img {
+    pointer-events: none;
+    -webkit-user-drag: none;
+  }
+
+   @media print {
+    body { display: none !important; }
+  }
+
+   .protected-content {
+    transition: filter 0.1s ease;
+  }
+  .is-blurred {
+    filter: blur(60px) !important;
+  }
+
+ </style>
+<script>
+   document.addEventListener('contextmenu', e => e.preventDefault());
+
+   document.addEventListener('keydown', function(e) {
+    if (
+      e.keyCode === 123 || // F12
+      (e.ctrlKey && (e.keyCode === 85 || e.keyCode === 83 || e.keyCode === 80)) || // Ctrl+U, S, P
+      (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) // Ctrl+I/J/C
+    ) {
+      e.preventDefault();
+      alert("Security Alert: Content is Protected!");
+      return false;
+    }
+  });
+   document.addEventListener('keyup', (e) => {
+    if (e.key === 'PrintScreen') {
+      navigator.clipboard.writeText(''); // क्लिपबोर्ड खाली करना
+      alert('Screenshots are disabled!');
+    }
+  });
+  setInterval(function() {
+    const threshold = 160;
+    if (window.outerWidth - window.innerWidth > threshold || window.outerHeight - window.innerHeight > threshold) {
+      document.body.innerHTML = "<h2 style='text-align:center; color:red; margin-top:20%'>Security Breach! Please close Developer Tools to view content.</h2>";
+    }
+  }, 1000);
+ </script>
+
+    <script>
+document.addEventListener("contextmenu", (e) => e.preventDefault());
+
+document.onkeydown = function(e) {
+  if (e.keyCode == 123) return false; // F12
+  if (e.ctrlKey && e.shiftKey && e.keyCode == 73) return false; // Ctrl+Shift+I
+  if (e.ctrlKey && e.keyCode == 85) return false; // Ctrl+U
+};
+</script>
+                     <a  href="https://wa.me/8684899869?text= How can i help you" class="whatshap-float" ><img  class="ji" src="images/QtvHd6lI9q4iydr59B.gif"></a>
+  <br>
+  <a href="tel: +918684899869" class="call-float"><img class="ji" src="images/WqXjQsd0MAhc2CvtkQ (1).gif"></a>
+ <style>
+    p{
+        text-align: center;
+    }
+                 .whatshap-float{
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                z-index: 1000;
+             }
+               .call-float{
+                position: fixed;
+                bottom: 100px;
+                right: 20px;
+                z-index: 1000;
+             }
+                     .ji{
+        height: 60px;
+        width: 60px;
+     }
+</style>
+            <br>
+    <a href="index.html"><button class=" btn btn-success">BACK</button></a>
+    <hr>
+
+          <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div>
+                        <ul class="nav nav-tabs">    
+                                    <img class="ig" src="images/IMG_20260110_134205.jpg">
+            <li class="col-3" class="nav-item"><a class="nav-link " href="#home" data-bs-toggle="tab">home</a></li>
+          <li class="col-3" class="nav-item"><a class="nav-link" href="#service" data-bs-toggle="tab">Services</a></li>
+        <li class="col-3" class="nav-item"><a class="nav-link" href="#news" data-bs-toggle="tab">News/blog</a></li>
+             </ul>
+  </div>
+</div>
+</div>
+ <br>
+                 <div class="tab-content">
+                      <div id="home" class="tab-pane fade show active"> 
+         <div class="card1">
+          <div class="card-footer1"> 
+                  <img class="ui" src="images/IMG_20260114_224011.jpg">
+  Deepak Aggarwal <p>who is holding BCA(4-yesrs Hons.degree)</p> 
+          </div>
+          <div class="card-header">
+            <div class="box"> 
+                <a  href="https://wa.me/8684899869?text=how can i help you?"><img class="ji" src="images/QtvHd6lI9q4iydr59B.gif"></a>
+   <a  href="mailto:deepakag286@gmail.com"><img class="ji"src="images/unnamed.gif"></a>
+  <a href="https://www.youtube.com/@deepak2005aggarwal"><img class="ji" src="images/ZGI3wLEZSDwi2Lx0lC.gif"></a>
+
+           </div>
+        </div>
+        </div>
+                        <hr>
+                        <p>------------------------------------------</p>
+<h8>█▓▒▒░░░"Digital work isn't just about efficiency; it's about expanding our potential and reimagining what's possible in an interconnected world."░░░▒▒▓██▓▒▒░░░</h8>
+   <p>------------------------------------------</p>
+   <br>
+   <div class="box"> 
+         <h3 class="ab"><img class="ig-9" src="images/1768416755323.png">ABOUT</h3>
+              This website is very helpful for school and college ,one can see pyq,notes etc,and can raise doubt
+         </div>
+         <div class="box-1">
+              <h3 class="abc"><img class="ig-9" src="images/1768416755323.png">Raise Doubt</h3>
+              <a href="https://docs.google.com/document/d/14915AYI9LfXo-zfMkpEm0IyXjyQQ2y8dahMrsdKTRq0/edit?usp=drivesdk">click this</a>
+              One can write own problem and problem will solve within 24 hrs
+              by descriptive method without any hesiatation
+         </div>
+         <br>
+         <img class="ig-3" src="images/1505855675-wd-motivationquotes-0014-15.avif">
+         <br>
+         <img class="ig-3" src="images/stock-vector-human-values-refer-to-those-values-which-are-at-the-core-of-being-human-mind-map-concept-background-2268954027.jpg">
+ </div>
+                 <div id="service" class="tab-pane fade in">
+                    <div class="card">
+                        <div class="card-header"> 
+                        <h8 class="cl">We provide best service following services are given below </h4>
+                            </div>
+                            <div class="card-img">
+                                <img class=" ig-99"src="images/adhar card.webp">
+                                <h3 class="ad">ADHAR UPDATE</h3>
+                            </div>
+                            <div class="card-img">
+                                <img class="ig-99" src="images/web develppment.png">
+                                <h3 class="ad">Web developer</h3>
+                            </div>
+                                                        <div class="card-img">
+                                <img class=" ig-99"src="images/coding.jpg">
+                                <h3 class="ad">Writ Code (c++,java,javascript,html)</h3>
+                            </div>
+                            <div class="card-img">
+                                <img class="ig-99" src="images/ms office.jpg">
+                                <h3 class="ad">MS-Office access</h3>
+                            </div>
+                            <div class="card-img">
+                                <img class=" ig-99"src="images/office assistant.jpg">
+                                <h3 class="ad">Office assiatance</h3>
+                            </div>
+                            <div class="card-img">
+                                <img class="ig-99" src="">
+                                <h3 class="ad"></h3>
+                            </div>
+
+
+                    </div>
+                      </div>
+
+                 <div id="news" class="tab-pane fade in">
+      <div class="card">
+         <div class="card-header">
+           <h8> Educational Technology and Mobile Learning</h8> 
+         </div>
+         <div class="card-title">
+            <h9> Articles and guides focused on helping teachers and students seamlessly integrate technology into the classroom using the latest digital tools. Offers advice, tips, and tricks along with virtual education resources and mobile apps for all major platforms.</h9>
+         </div>
+       </div>
+       <hr>
+       <div class="card">
+        <div class="card-header">
+            <h8>smartphone-addiction</h8>
+        </div>
+        <div class="card-title">
+            <h9>“It is okay to own a technology, what is not okay is to be owned by technology.”</h9>
+        </div>
+       </div>
+       <hr>
+       <div class="card">
+        <div class="card-header">
+            <h8>Cybersecurity Tools</h8>
+        </div>
+        <div class="card-title">
+            <h9>Firewalls: These act as barriers between trusted internal networks and untrusted external networks, filtering incoming and outgoing traffic to prevent unauthorized acces</h9>
+        </div>
+       </div>
+  </div>
+  </div>
+    <style>
+        body{
+            background-color: floralwhite;
+            margin-top:0.5cm;
+        margin-left: 0.5cm;
+        margin-right: 0.5cm;
+        }
+         .ig-67{
+            height: 40px;
+            width: 50px;
+        }
+            .ji{
+      height: 50px;
+      width: 60px;
+      margin-left:1cm;
+      
+    }
+                  .ui{
+        height: 150px;
+        width: 150px;
+        border-radius: 5cm;
+        margin-left: 0.5cm;
+    }
+
+      .box{
+      background-color: powderblue;
+     }
+         .card1{
+          box-shadow: 2px 2px 2px 2px red;
+          background-color: lightcyan;
+         }
+
+        p{
+            margin-left: 0.5cm;
+            color: green;
+        }
+        .ig-99{
+            height: 200px;
+            width: 250px;
+            margin-left: 1.5cm;
+        }
+            button{
+        margin-left: 3cm;
+        color: black;
+        width: 150px;
+        height: 60px;
+    }
+
+         .ad{
+            color: darkgreen;
+            margin-left: 2cm;
+        }
+        .cl{
+            color: red;
+        }
+        .ig4{
+            height: 250px;
+            width: 350px;
+        }
+        .ig-9{
+            height: 80px;
+            width: 60px;
+            margin-right: 0.5cm;
+        }
+        .container-6{
+             background-color: black;
+             height: 300px;
+        }
+         .date{
+            color: red;
+        }
+        h7{
+            color: chartreuse;
+             margin-left: 2cm;
+            font-style: italic;
+        }
+        h9{
+            color: darkgoldenrod;
+            text-align: center;
+        }
+        .ig{
+            height: 40px;
+            width: 40px;
+            border-radius: 6cm;
+          }
+         .ig-2{
+            height: 100px;
+            width: 150px;
+            margin-left: 2cm;
+         }
+         h2{
+            color: green;
+            margin-left: 1cm;
+         }
+         .ig-3{
+            height: 250px;
+            width: 300px;
+            margin-left: 0.5cm;
+         }
+          .ab{
+                        margin-left: 1.5cm;
+             color: red;
+            font-style: oblique;
+         }
+         .box{
+            margin: 5px 5px 5px ;
+            background-color: powderblue;
+         }
+         h6{
+            color: black;
+            margin-left: 0.5cm;
+         }
+         .container{
+            background-color: brown;
+            height: 40px;
+         }
+        .nav-link{
+            color: black;
+            margin-left: 0.5cm;
+         }
+         .nav-link:hover{
+            color: darkgoldenrod;
+         }
+         .row{
+            gap: 0.5cm;
+         }
+         .card{
+            background-color: ghostwhite;
+         }
+         h8{
+            color: deeppink;
+         }
+         .back{
+            color: black;
+            margin-top: 0.1cm;
+            margin-left: 2cm;
+         }
+         .back:hover{
+            color: yellow;
+         }
+         .abc{
+            margin-left: 1.5cm;
+            font-style: oblique;
+         }
+          a{
+            text-decoration: none;
+            font-size: medium;
+         }
+         .box-1{
+            background-color: yellowgreen;
+         }
+         .gallery{
+            height: 35px;
+            width: 35px;
+            margin-left: 1.5cm;
+          }
+                  .gallery-1{
+            height: 35px;
+            width: 35px;
+            margin-left: 3cm;
+          }
+
+        </style>
+</body>
+</html>
